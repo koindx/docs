@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Koindex Docs
+            Koindx Docs
           </Link>
         </div>
       </div>
