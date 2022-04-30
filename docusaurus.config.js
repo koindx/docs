@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'koindx documentation',
-  tagline: 'Documentation and guides for the koindx exchange',
+  title: 'Koindx Docs',
+  tagline: 'The Koinos Dex',
   url: 'https://doc.koindx.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'koindx',
-  projectName: 'doc',
+  organizationName: 'koindx', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
 
   presets: [
     [
@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/koindx/docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/koindx/docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,24 +43,31 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'koindx',
+        title: 'Koindx',
+   
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Documentation',
+            label: 'Docs',
           },
-          {
-            href: 'https://github.com/koindx',
-            label: 'GitHub',
-            position: 'right',
-          },
+          {href: 'https://medium.com/@koindx', label: 'Blog', position: 'left'},
+ 
         ],
       },
       footer: {
         style: 'dark',
         links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Docs',
+                to: '/docs/intro',
+              },
+            ],
+          },
           {
             title: 'Community',
             items: [
@@ -81,13 +88,10 @@ const config = {
                 label: 'Blog',
                 href: 'https://medium.com/@koindx',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/koindx',
-              },
             ],
           },
-        ]
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Koindx`,
       },
       prism: {
         theme: lightCodeTheme,
