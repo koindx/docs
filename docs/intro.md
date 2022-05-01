@@ -10,7 +10,7 @@ Koindx can proudly say it's the first DEX on the [Koinos Blockchain](https://koi
 
 ## Getting Started
 
-If you want to learn about how to use Koindx, take a look at the [**Getting Started**](getting-started/use-koindx.md) section.
+If you want to learn about how to use Koindx, take a look at the [**Getting Started**](getting-started/connect.md) section.
 
 ### What you'll need
 
