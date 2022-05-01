@@ -10,7 +10,7 @@ The default asset on Koindx during Koinos testnet right now is tKoin.
 
 Default assets are provided by lists from Koindx.com. If you have created your own token, or want to trade a token that we do not know about, you can also add a custom token.
 
-We provided two example tokens **Token Demo A** and **Token Demo A** for the purpose of testing the dex functions.
+We provided two example tokens **Token Demo A** and **Token Demo B** for the purpose of testing the dex functions.
 
 The contracts of test tokens are the following:
 
