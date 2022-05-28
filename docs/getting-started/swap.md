@@ -35,4 +35,4 @@ If you have selected a trading pair, then you can begin to set the amount of the
 Adding a number will update the input field of the other token. You will see directly what you can receive for this trade. Notice also the slippage for your trade and also the number of the maximum send amount.
 
 If everything looks good, you can click on Swap. A Kondor wallet window will open and ask you to sign the transaction.
-After clicking on sign your transaction will be processed.
+After clicking on sign, your transaction will be processed.
