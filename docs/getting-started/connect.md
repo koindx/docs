@@ -4,7 +4,10 @@ sidebar_position: 1
 
 # Connect your wallet
 
-If you have Kondor wallet installed setup and installed, connecting your wallet is very easy.
+To connect a wallet you need to setup the Kondor wallet as a [browser extension for chrome](https://chrome.google.com/webstore/detail/kondor/ghipkefkpgkladckmlmdnadmcchefhjl).
+At the moment there is no other and no mobile browser wallet available for Koinos.
+
+If you have Kondor wallet setup and installed, connecting your wallet is very easy. 
 
 You can find the connect button in the upper right corner on every page.
 
