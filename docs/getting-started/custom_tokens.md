@@ -6,9 +6,9 @@ sidebar_position: 2
 
 ## About
 
-The default asset on Koindx during Koinos testnet right now is tKoin. 
+The default asset on KoinDX during Koinos testnet right now is tKoin. 
 
-Default assets are provided by lists from Koindx.com. If you have created your own token, or want to trade a token that we do not know about, you can also add a custom token.
+Default assets are provided by lists from KoinDX.com. If you have created your own token, or want to trade a token that we do not know about, you can also add a custom token.
 
 We provided two example tokens **Token Demo A** and **Token Demo B** for the purpose of testing the dex functions.
 
@@ -19,7 +19,7 @@ The contracts of test tokens are the following:
 
 ## How to add a custom token
 
-Navigate to the swap or liquidity page of Koindx.
+Navigate to the swap or liquidity page of KoinDX.
 
 Click on the TKOIN / SELECT A TOKEN button in the input field.
 
@@ -27,7 +27,7 @@ Click on the TKOIN / SELECT A TOKEN button in the input field.
 
 After that you will see the "Select a Token" modal. 
 
-Here all tokens that Koindx or you added are listed. You can choose one of these to swap for example.
+Here all tokens that KoinDX or you added are listed. You can choose one of these to swap for example.
 
 If you want to select a custom token, you need to choose the Manage Tokens page below the listed assets.
 
@@ -43,7 +43,7 @@ If you accept it and understand it, you can still import the asset.
 
 ![Button with address](/img/doc_img/import_token.png)
 
-Go back to the select a token page and you will see that Koindx now shows you the recently added "Token Demo A" Token.
+Go back to the select a token page and you will see that KoinDX now shows you the recently added "Token Demo A" Token.
 
 ![Button with address](/img/doc_img/select_a_token_with_custom_token.png)
 

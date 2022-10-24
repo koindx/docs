@@ -4,10 +4,10 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'What is KoinDX?',
+    title: 'What Is koindx?',
     description: (
       <>
-        KoinDX is a next generation decentralized exchange that leverages the feeless systems of the koinos blockchain.
+        koindx is a next generation decentralized exchange that leverages the feeless systems of the koinos blockchain.
       </>
     ),
   }

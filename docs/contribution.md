@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+sidebar_position: 10
 ---
 
 # Contribution
 
-You can help us to improve the docs of Koindx! 
+You can help us to improve the docs of KoinDX! 
 
 ## How to Contribute
 
