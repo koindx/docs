@@ -34,9 +34,23 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
+      image: 'img/og_image.png',
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: 'KoinDX',
-   
+
         items: [
           {
             type: 'doc',
@@ -44,8 +58,8 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {href: 'https://medium.com/@koindx', label: 'Blog', position: 'left'},
- 
+          { href: 'https://medium.com/@koindx', label: 'Blog', position: 'left' },
+
         ],
       },
       footer: {
@@ -86,7 +100,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} KoinDX`,
       },
       prism: {
-        theme: darkCodeTheme,
+        theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
