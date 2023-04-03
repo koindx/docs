@@ -86,7 +86,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} KoinDX`,
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),

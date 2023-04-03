@@ -7,7 +7,7 @@ const FeatureList = [
     title: 'What Is koindx?',
     description: (
       <>
-        koindx is a next generation decentralized exchange that leverages the feeless systems of the koinos blockchain.
+        KoinDX is a next gen decentralized exchange that leverages the feeless systems of the koinos blockchain.
       </>
     ),
   }
