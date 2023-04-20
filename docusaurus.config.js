@@ -76,12 +76,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'General',
             items: [
               {
                 label: 'Docs',
-                to: '/docs/intro',
+                to: '/',
               },
+              {
+                label: 'KoinDX Labs',
+                href: 'https://koindx.com'
+              }
             ],
           },
           {
@@ -95,6 +99,10 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/koindx',
               },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/koindx'
+              }
             ],
           },
           {
@@ -104,6 +112,10 @@ const config = {
                 label: 'Blog',
                 href: 'https://medium.com/@koindx',
               },
+              {
+                label: 'Koinos Whaletracker',
+                href: 'https://t.me/koinoswhaletracker',
+              }
             ],
           },
         ],
