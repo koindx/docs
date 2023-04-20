@@ -1,8 +1,9 @@
 ---
-sidebar_position: 3
+sidebar_position: 12
 ---
 
-# How to use the bridge
+# Bridge
+## Disclaimer
 
 **Disclaimer: KoinDX Labs only provides the web UI interface for the bridge. The bridge is a decentralized protocol. KoinDX Labs does not operate the bridge. The bridge is also not audited at this point in time and bears a risk.**
 

@@ -22,7 +22,7 @@ You can find the connect button in the upper right corner on every page.
 
 Click the connect button and choose the wallet you want to use.
 
-After you have pressed it, the wallet will ask you for permission to provide information.
+After you have pressed the button, your wallet will ask for permission to provide account data from your wallet.
 
 Accept to proceed.
 
