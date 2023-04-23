@@ -17,9 +17,9 @@ The amount of sKOINDX is equal to the voting power.
 ```mermaid
 
 flowchart LR
-classDef deniedEvent fill:#f73378,color:white,font-weight:bold;
-classDef successEvent fill:#6fbf73,color:white,font-weight:bold;
-classDef neutralEvent fill:#78909c,color:white,font-weight:bold;
+classDef deniedEvent fill:#f73378,color:white;
+classDef successEvent fill:#6fbf73,color:white;
+classDef neutralEvent fill:#78909c,color:white;
 
     A[Pending <br />3 Days]:::neutralEvent-->B[Active]:::neutralEvent
     B[Active <br />7 Days]-->C[Queue]:::neutralEvent
