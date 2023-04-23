@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # AMM/Swap
@@ -7,6 +7,7 @@ sidebar_position: 4
 This section explains to you what a swap is and how you do a swap on KoinDX.
 
 ## What is a swap?
+
 A swap is a very simple way to trade assets on KoinDX.
 
 On KoinDX you don't trade directly on a peer to peer basis with another KoinDX user directly. You will use our KoinDX Swap protocol instead.
@@ -22,7 +23,7 @@ If you want to swap an asset on KoinDX, navigate to the [swap page](https://koin
 
 Then you should connect your wallet if you haven't done this already. Check out the [connect page](../getting-started/connect.md) if you want to learn more about that.
 
-After that you will see the "Select a Token" modal. 
+After that you will see the "Select a Token" modal.
 
 Here all tokens that KoinDX or you added are listed. You can choose one of these to swap for example.
 

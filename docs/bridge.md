@@ -3,10 +3,10 @@ sidebar_position: 12
 ---
 
 # Bridge
+
 ## Disclaimer
 
 **Disclaimer: KoinDX Labs only provides the web UI interface for the bridge. The bridge is a decentralized protocol. KoinDX Labs does not operate the bridge. The bridge is also not audited at this point in time and bears a risk.**
-
 
 ## About
 
@@ -25,7 +25,7 @@ Once the asset has been bridged, users can redeem the original token on the sour
 
 Once the transaction is confirmed, the corresponding token will be burned on the target blockchain, and the original token will be unlocked in the smart contract on the source blockchain. The original token can then be transferred or used on the source blockchain as usual.
 
-By using the KoinDX bridge UI, users can transfer assets between different blockchains and take advantage of the unique features and functionalities offered by each blockchain network. However, it's important to note that the bridge is a decentralized protocol that is not audited at this point in time and bears a risk. Therefore, users should exercise caution when using the bridge and thoroughly research the risks and limitations involved. 
+By using the KoinDX bridge UI, users can transfer assets between different blockchains and take advantage of the unique features and functionalities offered by each blockchain network. However, it's important to note that the bridge is a decentralized protocol that is not audited at this point in time and bears a risk. Therefore, users should exercise caution when using the bridge and thoroughly research the risks and limitations involved.
 
 ## Begin to bridge
 
