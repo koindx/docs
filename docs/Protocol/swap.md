@@ -19,7 +19,7 @@ This sounds much more complex than it is in reality. Learn how to swap assets on
 
 If you want to swap an asset on KoinDX, navigate to the [swap page](https://koindx.com/swap).
 
-![KoinDX swap page](/img/doc_img/swap.png)
+![KoinDX swap page](/img/doc_img/swap/SWAP_1.png)
 
 Then you should connect your wallet if you haven't done this already. Check out the [connect page](../getting-started/connect.md) if you want to learn more about that.
 
@@ -29,7 +29,7 @@ Here all tokens that KoinDX or you added are listed. You can choose one of these
 
 Learn more about how to [add custom tokens here](../getting-started/custom_tokens.md).
 
-![KoinDX swap progress entered numbers](/img/doc_img/swap_ready.png)
+![KoinDX swap progress entered numbers](/img/doc_img/swap/SWAP_2.png)
 
 If you have selected a trading pair, then you can begin to set the amount of the token you want to trade.
 
