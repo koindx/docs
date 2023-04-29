@@ -6,6 +6,6 @@ sidebar_position: 11
 
 | Item         | CONTRACT ADDRESS |
 |--------------|-----------|
-| KOINDX Token | 18HHisnBQDQ5GJTdaR2h6QPTY42RmZwCS  |
+| KOINDX Token | soon  |
 | sKOINDX Token   |        |
-| Core Contract | 17TAwcuJ4tHc9TmCbZ24nSMvY9bPxwQq5s |
+| Core Contract | soon |
