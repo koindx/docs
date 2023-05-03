@@ -6,45 +6,21 @@ sidebar_position: 2
 
 ## About
 
-The default asset on KoinDX during Koinos testnet right now is tKoin. 
-
-Default assets are provided by lists from KoinDX.com. If you have created your own token, or want to trade a token that we do not know about, you can also add a custom token.
-
-We provided two example tokens **Token Demo A** and **Token Demo B** for the purpose of testing the dex functions.
-
-The contracts of test tokens are the following:
-
-- TKNA: 1M6NjRHh5x926wZUXYUz86x6j5MBqQJAvQ
-- TKNB: 1H88naibGSwCbxnXB3MpYSdiEChKducag3
+KoinDX, a decentralized exchange, offers the KOINDX token as its default asset. Additionally, KoinDX provides a list of default assets that don't require manual addition. However, if you want to trade a token that's not included in the default list, you can still add it to your selection.
 
 ## How to add a custom token
 
-Navigate to the swap or liquidity page of KoinDX.
+To add a custom token to your selection on KoinDX, follow these steps:
 
-Click on the TKOIN / SELECT A TOKEN button in the input field.
+1. Navigate to the swap or liquidity page of KoinDX.
+2. Click on the asset name in the input field.
+3. The "Select a Token" modal will appear, listing all default and custom-added tokens.
+4. To select a custom token, choose the "Manage Tokens" button located below the listed assets.
+5. In the "Manage Tokens" modal, copy the contract address of the token you want to add and paste it into the address search field.
+6. If the token is found, click on it to import the asset.
+7. A warning message will appear, notifying you that the token isn't part of the default asset list and adding it might pose a risk. If you accept the risk, click "import" to continue.
+8. The custom token is now added to your selection and can be used throughout the KoinDX dApp.
 
-![Button with address](/img/doc_img/swap.png)
+![Select a token - Manage tokens](/img/doc_img/Select_a_token.png)
 
-After that you will see the "Select a Token" modal. 
-
-Here all tokens that KoinDX or you added are listed. You can choose one of these to swap for example.
-
-If you want to select a custom token, you need to choose the Manage Tokens page below the listed assets.
-
-Copy the contract address of Token Demo a into the address search field.
-
-Now it should be found and you can click on it to import the asset.
-
-![Button with address](/img/doc_img/manage_token_search.png)
-
-We will show you a warning that we don't know the asset and that it might be a risk for you.
-
-If you accept it and understand it, you can still import the asset.
-
-![Button with address](/img/doc_img/import_token.png)
-
-Go back to the select a token page and you will see that KoinDX now shows you the recently added "Token Demo A" Token.
-
-![Button with address](/img/doc_img/select_a_token_with_custom_token.png)
-
-You can use the custom token now everywhere on Kondx.com
+By following these steps, you can add any custom token to KoinDX and start trading. However, be cautious when adding custom tokens and thoroughly research the token and its contract address to avoid any potential risks.

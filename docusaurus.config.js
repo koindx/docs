@@ -15,18 +15,26 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'koindx', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
-
+  markdown: {
+    mermaid: true
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // Docs folder path relative to website dir.
+          path: './docs',
+          routeBasePath: '/',
+          // Sidebars file relative to website dir.
           sidebarPath: require.resolve('./sidebars.js'),
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        blog: false,
       }),
     ],
   ],
@@ -34,9 +42,24 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+   
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Q2 2023: KoinDX DAO IDO <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/koindx">Follow us on Twitter</a> and don\'t miss an update.',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
+      image: 'img/og_image.png',
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: 'KoinDX',
-   
+
         items: [
           {
             type: 'doc',
@@ -44,20 +67,28 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {href: 'https://medium.com/@koindx', label: 'Blog', position: 'left'},
- 
+          { href: 'https://medium.com/@koindx', label: 'Blog', position: 'left' },
+          {
+            href: 'https://github.com/koindx',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'General',
             items: [
               {
                 label: 'Docs',
-                to: '/docs/intro',
+                to: '/',
               },
+              {
+                label: 'KoinDX Labs',
+                href: 'https://koindx.com'
+              }
             ],
           },
           {
@@ -71,6 +102,10 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/koindx',
               },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/koindx'
+              }
             ],
           },
           {
@@ -80,6 +115,10 @@ const config = {
                 label: 'Blog',
                 href: 'https://medium.com/@koindx',
               },
+              {
+                label: 'Koinos Whaletracker',
+                href: 'https://t.me/koinoswhaletracker',
+              }
             ],
           },
         ],

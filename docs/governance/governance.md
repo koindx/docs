@@ -1,20 +1,36 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # Governance
 
 ## Receive Voting Power
 
-A user will receive voting power by staking KNDX. By staking KNDX a user will receive sKNDX (staked KNDX). 
+A user will receive voting power by staking sKOINDX in the governance plugin.
 
-The more sKNDX a user holds, the more **staking rewards**, the more **discounts** and the more **voting power** he'll receive.
+The more sKOINDX a user holds, the more **staking rewards**, the more **discounts** and the more **voting power** he'll receive.
 
-The amount of sKNDX is equal to the voting power.
+The amount of sKOINDX is equal to the voting power.
+
+## Governance Process Diagram
+
+```mermaid
+
+flowchart LR
+classDef deniedEvent fill:#f73378,color:white;
+classDef successEvent fill:#6fbf73,color:white;
+classDef neutralEvent fill:#78909c,color:white;
+
+    A[Pending <br />3 Days]:::neutralEvent-->B[Active]:::neutralEvent
+    B[Active <br />7 Days]-->C[Queue]:::neutralEvent
+    C[Queue]-->E[Approved]:::successEvent
+    C[Queue <br />3 Days]-->D[Denied]:::deniedEvent
+    E[Approved]-->F[Execution]:::neutralEvent
+    F[Execution]-->G[Succeeded]:::successEvent
+    F[Execution <br />5 Days]-->H[Denied]:::deniedEvent
+```
 
 ## Phases
-
-![KoinDX governance process diagram](./governance_explanation_of_each_period_2.png "KoinDX governance process diagram")
 
 **PENDING PHASE**: Refers to the waiting time in which people can analyze the proposal and review the respective changes to be made.
 
@@ -42,7 +58,7 @@ For example, if we have the following data:
 
 With these data, a hash of type sha-256 needs to be generated in the following order:
 
-_Type of call + Contract address + Bytecode_
+Type of call + Contract address + Bytecode
 
 upload_contract 1GxW5JVgQrw4rbpsnZvX5sxDYX8siRFuzw AGFzbQEAAAABMglgAn9_AGACf38Bf2ABfwBgAX8Bf2AAAGADf39_AGAAAX9gBX9_f39_AX9gA39_fwF_AhoBA2VudhJpbnZva2Vfc3lzdGVtX2NhbGwABwM=
 
