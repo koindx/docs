@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Treasury Earnings Distribution
 
-![KOINDX token allocation](/img/doc_img/tokenomics/treasury_distribution.png)
+![KOINDX token allocation](/img/doc_img/tokenomics/treasury_earnings.png)
 
 The left diagram shows the distribution of LP-earnings and DAO-earnings.
 
