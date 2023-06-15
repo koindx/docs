@@ -6,6 +6,5 @@ sidebar_position: 11
 
 | Item         | CONTRACT ADDRESS |
 |--------------|-----------|
-| KOINDX Token | soon  |
-| sKOINDX Token   |        |
 | Core Contract | soon |
+| Periphery Contract | soon |

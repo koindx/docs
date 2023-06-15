@@ -7,7 +7,6 @@ sidebar_position: 9
 ## 2023 Q2
 
 - [ ] Launch
-- [ ] IDO
 
 ## 2023 Q3
 
