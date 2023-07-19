@@ -112,7 +112,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                href: 'https://medium.com/@koindx',
+                href: 'https://blog.koindx.com',
               },
               {
                 label: 'Koinos Whaletracker',
