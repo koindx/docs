@@ -51,7 +51,7 @@ const config = {
         textColor: '#091E42',
         isCloseable: false,
       },
-      image: 'img/og_image.png',
+      image: 'img/koindx_open_graph_image.png',
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
