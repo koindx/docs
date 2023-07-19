@@ -67,7 +67,6 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          { href: 'https://medium.com/@koindx', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/koindx',
             label: 'GitHub',
