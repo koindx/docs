@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'KoinDX Docs',
   tagline: 'The Koinos Dex',
-  url: 'https://doc.koindx.com',
+  url: 'https://docs.koindx.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
