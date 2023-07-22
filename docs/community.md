@@ -7,4 +7,4 @@ sidebar_position: 13
 - [Twitter](https://twitter.com/koindx)
 - [Discord](https://discord.koindx.com)
 - [Telegram](https://t.me/koindx)
-- [Medium](https://medium.com/@koindx)
+- [Blog](https://blog.koindx.com)

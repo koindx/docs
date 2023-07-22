@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'KoinDX Docs',
   tagline: 'The Koinos Dex',
-  url: 'https://doc.koindx.com',
+  url: 'https://docs.koindx.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -46,12 +46,12 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'Q2 2023: KoinDX DAO IDO <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/koindx">Follow us on Twitter</a> and don\'t miss an update.',
+          'Q3 2023: KoinDX LAUNCH <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/koindx">Follow us on Twitter</a> and don\'t miss an update.',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: false,
       },
-      image: 'img/og_image.png',
+      image: 'img/koindx_open_graph_image.png',
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
@@ -67,7 +67,6 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          { href: 'https://medium.com/@koindx', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/koindx',
             label: 'GitHub',
@@ -113,7 +112,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                href: 'https://medium.com/@koindx',
+                href: 'https://blog.koindx.com',
               },
               {
                 label: 'Koinos Whaletracker',
