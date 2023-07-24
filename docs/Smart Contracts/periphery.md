@@ -93,8 +93,8 @@ Method used to add liquidity to a pair.
 
 | Params            | Description                                                  |
 |-------------------|--------------------------------------------------------------|
-| token_a           | token a of the country to which you want to add liquidity    |
-| token_a           | token b of the country to which you want to add liquidity    |
+| token_a           | token a of the pool to which you want to add liquidity    |
+| token_b           | token b of the pool to which you want to add liquidity    |
 | amount_a_desired  | It is the liquidity of token a desired to add to the pair    |
 | amount_b_desired  | It is the liquidity of token b desired to add to the pair    |
 | amount_a_min      | It is the minimum liquidity of token a entered into the pair |
@@ -106,8 +106,8 @@ Method used to remove liquidity from a pair.
 
 | Params            | Description                                                                        |
 |-------------------|------------------------------------------------------------------------------------|
-| token_a           | token a of the country to which you want to add liquidity                          |
-| token_a           | token b of the country to which you want to add liquidity                          |
+| token_a           | token a of the pool to which you want to add liquidity                          |
+| token_b           | token b of the pool to which you want to add liquidity                          |
 | liquidity         | amount of liquidity tokens that you want to burn to remove liquidity from the pair |
 | amount_a_min      | Minimum token that the user wants to receive after removing tokens from the pair   |
 | amount_b_min      | Minimum token that the user wants to receive after removing tokens from the pair   |
