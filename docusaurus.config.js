@@ -117,7 +117,12 @@ const config = {
               {
                 label: 'Koinos Whaletracker',
                 href: 'https://t.me/koinoswhaletracker',
+              },
+              {
+                label: 'Status',
+                href: 'https://status.koindx.com',
               }
+              
             ],
           },
         ],
