@@ -11,7 +11,7 @@ The periphery contract is the main koindx contract, its function is to be the in
 | Network           | Address                            |
 |-------------------|------------------------------------|
 | Koinos Harbinger  | 122MpHXb8aFF4xHZk6ESeHjRM5sBGLYxTc |
-| Koinos Mainnet    | soon                               |
+| Koinos Mainnet    | 14WeQjBk7F4C58xUquRGLK1KiqRjwj5Y4J |
 
 ## Read-Only Functions
 
