@@ -123,7 +123,6 @@ Method used to swap tokens using the exact input amount of tokens
 | path              | Route that is carried out to do the token swap can be 1 single pair or multiple pairs  |
 | receiver          | Address where the output tokens will be received                                       |
 
-
 ### swap_tokens_out
 
 Method used to swap tokens using the exact amount of token output
@@ -134,5 +133,3 @@ Method used to swap tokens using the exact amount of token output
 | amount_in_max     | Maximum amount the user is willing to pay for x number of output tokens            |
 | path              | amount of liquidity tokens that you want to burn to remove liquidity from the pair |
 | receiver          | Address where the output tokens will be received                                   |
-
-
