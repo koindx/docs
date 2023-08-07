@@ -9,4 +9,4 @@ sidebar_position: 3
 The diagram shows the distribution of LP-earnings and DAO-earnings.
 
 - Swap-fees on KoinDX are currently set to 0.25% of each trade.
-- This means 0.017% of the tade will be given to the liquidity provider and 0.08% will to KoinDX.
+- This means 0.17% of the tade will be given to the liquidity provider and 0.08% will to KoinDX.
