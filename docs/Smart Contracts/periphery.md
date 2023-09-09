@@ -10,8 +10,8 @@ The periphery contract is the main koindx contract, its function is to be the in
 
 | Network           | Address                            |
 |-------------------|------------------------------------|
-| Koinos Harbinger  | 122MpHXb8aFF4xHZk6ESeHjRM5sBGLYxTc |
-| Koinos Mainnet    | 14WeQjBk7F4C58xUquRGLK1KiqRjwj5Y4J |
+| Koinos Harbinger  | 18MV8beHrgV78JpHxTXrvPfSmP2kWy7DVk |
+| Koinos Mainnet    | 17e1q6Fh5RgnuA8K7v4KvXXH4k9qHgsT5s |
 
 ## Read-Only Functions
 
@@ -58,7 +58,6 @@ Method used to calculate the amount of token that the user would have to send if
 | reserve_a    | Reserve of token a                          |
 | reserve_b    | Reserve of token B                          |
 
-
 ## State-Changing Functions
 
 ### authorize_update
@@ -68,7 +67,6 @@ Method used to allow Periphery contract updates using a hash to control updates.
 | Params       | Description                                                                        |
 |--------------|------------------------------------------------------------------------------------|
 | hash         | It is a sha256 created with the wasm file of the contract used to allow updates of |
-
 
 ### set_config
 
