@@ -6,6 +6,7 @@ sidebar_position: 9
 
 ## 2023 Q3
 
-- [ ] Launch
+- [x] Launch
+- [x] Contract Migration
 
 - TBA

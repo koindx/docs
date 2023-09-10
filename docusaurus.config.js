@@ -46,7 +46,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'Q3 2023: KoinDX LAUNCH <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/koindx">Follow us on Twitter</a> and don\'t miss an update.',
+          'News: KoinDX Contract Migration - <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/koindx">Follow us on Twitter</a> and don\'t miss an update.',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: false,

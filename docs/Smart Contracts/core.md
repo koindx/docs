@@ -62,6 +62,14 @@ Method used to know how many tokens an address can spend and that the owner of t
 ### get_reserves
 Method used to know the current liquidity reserves in the pool.
 
+### get_tokens
+Returns the token addresses of a pool.
+
+| Params       | Description                                                        |
+|--------------|--------------------------------------------------------------------|
+| token_a      | The adress of token asset a                                        |
+| token_b      | The adress of token asset a                                        |
+
 ## State-Changing Functions
 
 ### transfer
