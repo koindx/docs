@@ -108,9 +108,9 @@ console.log(token);
 KOIN and VHP are predefined assets in the SDK. You can directly create the currency objects without fetching them from the chain.
 
 ```js title="Using native assets"
-import { ChainId, KOIN } from "@koindx/v2-sdk";
+import { ChainId, TKOIN } from "@koindx/v2-sdk";
 
-const tkoin = new KOIN(ChainId.HARBINGER);
+const tkoin = new TKOIN(ChainId.HARBINGER);
 console.log(tkoin);
 ```
 
@@ -119,12 +119,12 @@ console.log(tkoin);
 Only the chain id and two token currency objects are required to fetch the data a token pair from KoinDX. Some return values will be presented as a BigNumber object. The SDK works with BigNumber.js which you might want to use as well.
 
 ```js title="Fetching a liquidity pair"
-import { ChainId, Fetcher, KOIN, VHP } from "@koindx/v2-sdk";
+import { ChainId, Fetcher, TKOIN, VHP } from "@koindx/v2-sdk";
 
-const koin = new KOIN(ChainId.HARBINGER);
+const tkoin = new TKOIN(ChainId.HARBINGER);
 const vhp = new VHP(ChainId.HARBINGER);
 
-let pair = await Fetcher.fetchPairData(ChainId.HARBINGER, koin, vhp);
+let pair = await Fetcher.fetchPairData(ChainId.HARBINGER, tkoin, vhp);
 console.log(pair);
 ```
 
@@ -132,7 +132,7 @@ console.log(pair);
 ### Add liquidity
 
 ```js title="Add liquidity to an existing pool"
-import { Pool, ChainId, Fetcher, KOIN, Percent, VHP } from "@koindx/v2-sdk";
+import { Pool, ChainId, Fetcher, TKOIN, Percent, VHP } from "@koindx/v2-sdk";
 import { Signer } from "koilib"
 import BigNumber from "bignumber.js";
 import 'dotenv/config'
@@ -140,16 +140,16 @@ import 'dotenv/config'
 // define slippage
 const slippage = new Percent(new BigNumber("10"))
 // create assets
-const koin = new KOIN(ChainId.HARBINGER);
+const tkoin = new TKOIN(ChainId.HARBINGER);
 const vhp = new VHP(ChainId.HARBINGER)
 // create signer
 const signer = Signer.fromWif(process.env.ACCOPUNT_PK);
 // create pair
-const PAIR_VHPKOIN = await Fetcher.fetchPairData(ChainId.HARBINGER, koin, vhp)
+const PAIR_VHPKOIN = await Fetcher.fetchPairData(ChainId.HARBINGER, tkoin, vhp)
 // create pool
 let pool = new Pool(PAIR_VHPKOIN);
 
-let result = pool.addLiquidity(koin, new BigNumber("100000"), slippage)
+let result = pool.addLiquidity(tkoin, new BigNumber("100000"), slippage)
 let data = {
   from: signer.getAddress(),
   receiver: signer.getAddress(),
@@ -168,7 +168,7 @@ This example shows how the Router object is used and how Koilib can be configure
 Besides the V2-SDK and koilib this example code uses dotenv and bignumber.js.
 
 ```js title="Retreive the path for the Router and then execute the transaction"
-import { ChainId, Fetcher, KOIN, Percent, CHAIN_TO_PROVIDER_MAP, Router, VHP, PeripheryAbi, CHAIN_TO_ADDRESSES_MAP } from "@koindx/v2-sdk";
+import { ChainId, Fetcher, TKOIN, Percent, CHAIN_TO_PROVIDER_MAP, Router, VHP, PeripheryAbi, CHAIN_TO_ADDRESSES_MAP } from "@koindx/v2-sdk";
 import { Signer, Contract, Transaction } from "koilib"
 import BigNumber from "bignumber.js";
 import 'dotenv/config'
@@ -178,14 +178,14 @@ const provider = CHAIN_TO_PROVIDER_MAP[ChainId.HARBINGER]
 // define slippage
 const slippage = new Percent(new BigNumber("10"))
 // create asset
-const koin = new KOIN(ChainId.HARBINGER);
+const tkoin = new TKOIN(ChainId.HARBINGER);
 const vhp = new VHP(ChainId.HARBINGER)
 // create signer
 const signer = Signer.fromWif(process.env.ACCOPUNT_PK);
 // set provider
 signer.provider = provider
 // create pair
-const PAIR_VHPKOIN = await Fetcher.fetchPairData(ChainId.HARBINGER, koin, vhp)
+const PAIR_VHPKOIN = await Fetcher.fetchPairData(ChainId.HARBINGER, tkoin, vhp)
 
 
 /**
