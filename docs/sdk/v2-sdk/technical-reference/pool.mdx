@@ -1,0 +1,43 @@
+---
+sidebar_position: 6
+description: KoinDX V2-SDK pool documentation
+title: Pool
+slug: pool
+---
+
+# Pool
+
+```
+constructor(pair: Pair)
+```
+
+## Example
+```js
+const pool = new Pool(PAIR_VHPKOIN)
+```
+
+## Properties
+
+  public readonly pairs: Pair
+
+### pair
+```
+pair: Pair
+```
+
+## Methods
+
+### addLiquidity
+```
+addLiquidity(token: Currency, amount: BigNumber, percent: Percent): AddLiquidity
+```
+
+### removeLiquidity
+```
+removeLiquidity(shares: BigNumber, percent: Percent): RemoveLiquidity
+```
+
+### addInitialLiquidity
+```
+addInitialLiquidity(tokenA: Currency, amountA: BigNumber, tokenB: Currency, amountB: BigNumber, percent: Percent)
+```

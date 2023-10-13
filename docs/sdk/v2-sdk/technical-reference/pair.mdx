@@ -1,0 +1,120 @@
+---
+sidebar_position: 3
+description: KoinDX V2-SDK pair documentation
+title: Pair
+slug: pair
+---
+
+# Pair
+
+```
+ constructor(
+    chain: ChainId,
+    address: string,
+    provider: Provider,
+    token_a: Currency,
+    token_b: Currency,
+    klast: BigNumber,
+    reserveA: BigNumber,
+    reserveB: BigNumber,
+    blockTime: BigNumber,
+    totalSupply: BigNumber,
+  )
+  ```
+
+## Example
+```js
+const newPair = new Pair(ChainId.HARBINGER,
+  "1JNfiwk1QT4Ao4bu1YrTD7rEiQoTPXKnZ6",
+  provider,
+  koin,
+  vhp,
+  new BigNumber("17540579531131349660"),
+  new BigNumber("2890462463"),
+  new BigNumber("6073521196"),
+  new BigNumber("4187745694"),
+  new BigNumber("1697201486510")
+)
+```
+
+## Properties
+
+### chain
+```
+chain: ChainId
+```
+
+### address
+```
+chain: string
+```
+
+### provider
+```
+provider: Provider
+```
+
+### token_0
+```
+token_0: Currency
+```
+
+### token_1 
+```
+token_1: Currency
+```
+
+### klast 
+```
+klast: BigNumber
+```
+
+### reserve_0 
+```
+reserve_0: BigNumber
+```
+
+### reserve_1 
+```
+reserve_1: BigNumber
+```
+
+### block_time 
+```
+block_time: BigNumber
+```
+
+### totaly_supply 
+```
+totaly_supply: BigNumber
+```
+
+
+
+
+## Methods
+
+### reserveOf
+```
+reserveOf(token: Currency): BigNumber
+```
+
+### getLiquidityMinted
+```
+getLiquidityMinted(amountA: BigNumber, amountB: BigNumber): BigNumber 
+```
+
+### getQuote
+```
+getQuote(token: Currency, amount: BigNumber): BigNumber
+```
+
+### getInputAmount
+```
+getQuote(tokenOut: Currency, amountOut: BigNumber): BigNumber
+```
+
+### getOutputAmount
+```
+getOutputAmount(tokenIn: Currency, amountIn: BigNumber): BigNumber
+```

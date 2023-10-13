@@ -1,0 +1,63 @@
+---
+sidebar_position: 2
+description: KoinDX V2-SDK documentation token
+title: Token
+slug: token
+---
+
+# Token
+
+```
+constructor(chainId: ChainId, address: string, decimals: number, symbol?: string, name?: string)
+```
+
+## Example
+```js
+import { ChainId, Token } from "@koindx/v2-sdk";
+const token = new Token(ChainId.MAINNET, '17n12ktwN79sR6ia9DDgCfmw77EgpbTyBi', 18, 'VHP', 'Virtual Hash Power')
+```
+
+## Properties
+
+### isNative
+```
+isNative: boolean
+```
+### isToken
+```
+isToken: boolean
+```
+### chainId
+```
+ChainId: ChainId
+```
+### address
+```
+address: string
+```
+### decimals
+```
+decimals: number
+```
+### symbol
+```
+symbol: string
+```
+### name
+```
+name: string
+```
+
+## Methods
+
+### equals
+Checks if the current instance (type of Currency = KOIN | VHP | Token) is equal to another (has an identical chainId and address).
+```
+equals(token: Currency): boolean 
+```
+
+### sortsBefore
+Checks if the current instance sorts before another, by address.
+```
+sortsBefore(other: Currency): boolean
+```
