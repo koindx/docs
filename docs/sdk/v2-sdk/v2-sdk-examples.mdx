@@ -1,0 +1,234 @@
+---
+sidebar_position: 2
+description: KoinDX V2-SDK - Explanation and code-examples
+title: Examples
+slug: examples
+---
+
+# V2-SDK
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
+
+## About
+
+The KoinDX v2-sdk is a node module which can be used to interact with the KoinDX v2 contracts.
+
+[NPM Package](https://www.npmjs.com/package/@koindx/v2-sdk)
+
+[Github](https://github.com/koindx/v2-sdk)
+
+## Getting Started
+
+### Installation
+
+<Tabs groupId="packagemanager">
+  <TabItem value="npm" label="npm" default>
+    <CodeBlock language="shell">
+      npm install @koindx/v2-sdk
+    </CodeBlock>
+  </TabItem>
+    <TabItem value="yarn" label="yarn">
+    <CodeBlock language="shell">
+      yarn add @koindx/v2-sdk
+    </CodeBlock>
+  </TabItem>
+  <TabItem value="pnpm" label="pnpm">
+    <CodeBlock language="shell">
+    pnpm add @koindx/v2-sdk
+    </CodeBlock>
+  </TabItem>
+  <TabItem value="bun" label="bun">
+    <CodeBlock language="shell">
+    bun add @koindx/v2-sdk  
+    </CodeBlock>
+  </TabItem>
+</Tabs>
+
+:::tip
+
+If you want to interact with the chain, you may want to install bignumber.js, dotenv and koilib as well.
+
+:::
+
+<Tabs groupId="packagemanager">
+  <TabItem value="npm" label="npm" default>
+    <CodeBlock language="shell">
+      npm install bignumber.js koilib dotenv
+    </CodeBlock>
+  </TabItem>
+    <TabItem value="yarn" label="yarn">
+    <CodeBlock language="shell">
+      yarn add bignumber.js koilib dotenv
+    </CodeBlock>
+  </TabItem>
+  <TabItem value="pnpm" label="pnpm">
+    <CodeBlock language="shell">
+    pnpm add bignumber.js koilib dotenv
+    </CodeBlock>
+  </TabItem>
+  <TabItem value="bun" label="bun">
+    <CodeBlock language="shell">
+    bun add bignumber.js koilib
+    </CodeBlock>
+  </TabItem>
+</Tabs>
+
+### Import
+
+Import the package in a Javascript or Typescript file.<br />
+Harbinger is a KoinDX Testnet. If you want to work on Mainnet, please use ```ChainId.MAINNET``` .
+
+```js title="ES6 (import syntax)"
+import { ChainId } from "@koindx/v2-sdk";
+console.log(ChainId.HARBINGER);
+```
+
+```js title="CommonJs (require syntax)"
+const SDK = require("@koindx/v2-sdk");
+console.log(SDK.ChainId.HARBINGER);
+```
+
+## Example
+
+These examples demonstrate the basic usage of the KoinDX v2-sdk.
+
+### Fetch Token
+
+```js title="Fetch TKOIN from Harbinger"
+import { ChainId, Fetcher } from "@koindx/v2-sdk";
+
+let token = await Fetcher.fetchTokenData(ChainId.HARBINGER,"1FaSvLjQJsCJKq5ybmGsMMQs8RQYyVv8ju");
+console.log(token);
+```
+
+### Native Assets
+
+KOIN and VHP are predefined assets in the SDK. You can directly create the currency objects without fetching them from the chain.
+
+```js title="Using native assets"
+import { ChainId, TKOIN } from "@koindx/v2-sdk";
+
+const tkoin = new TKOIN(ChainId.HARBINGER);
+console.log(tkoin);
+```
+
+### Fetch Pair
+
+Only the chain id and two token currency objects are required to fetch the data a token pair from KoinDX. Some return values will be presented as a BigNumber object. The SDK works with BigNumber.js which you might want to use as well.
+
+```js title="Fetching a liquidity pair"
+import { ChainId, Fetcher, TKOIN, VHP } from "@koindx/v2-sdk";
+
+const tkoin = new TKOIN(ChainId.HARBINGER);
+const vhp = new VHP(ChainId.HARBINGER);
+
+let pair = await Fetcher.fetchPairData(ChainId.HARBINGER, tkoin, vhp);
+console.log(pair);
+```
+
+
+### Add liquidity
+
+```js title="Add liquidity to an existing pool"
+import { Pool, ChainId, Fetcher, TKOIN, Percent, VHP } from "@koindx/v2-sdk";
+import { Signer } from "koilib"
+import BigNumber from "bignumber.js";
+import 'dotenv/config'
+
+// define slippage
+const slippage = new Percent(new BigNumber("10"))
+// create assets
+const tkoin = new TKOIN(ChainId.HARBINGER);
+const vhp = new VHP(ChainId.HARBINGER)
+// create signer
+const signer = Signer.fromWif(process.env.ACCOPUNT_PK);
+// create pair
+const PAIR_VHPKOIN = await Fetcher.fetchPairData(ChainId.HARBINGER, tkoin, vhp)
+// create pool
+let pool = new Pool(PAIR_VHPKOIN);
+
+let result = pool.addLiquidity(tkoin, new BigNumber("100000"), slippage)
+let data = {
+  from: signer.getAddress(),
+  receiver: signer.getAddress(),
+  token_a: result.token_a.address,
+  token_b: result.token_b.address,
+  amount_a_desired: result.amount_a_desired.toFixed(0, 1),
+  amount_b_desired: result.amount_b_desired.toFixed(0, 1),
+  amount_a_min: result.amount_a_min.toFixed(0, 1),
+  amount_b_min: result.amount_b_min.toFixed(0, 1)
+}
+console.log(data)
+```
+
+### Trade
+This example shows how the Router object is used and how Koilib can be configured to execute a trade through the KoinDX Periphery contract.
+Besides the V2-SDK and koilib this example code uses dotenv and bignumber.js.
+
+```js title="Retreive the path for the Router and then execute the transaction"
+import { ChainId, Fetcher, TKOIN, Percent, CHAIN_TO_PROVIDER_MAP, Router, VHP, PeripheryAbi, CHAIN_TO_ADDRESSES_MAP } from "@koindx/v2-sdk";
+import { Signer, Contract, Transaction } from "koilib"
+import BigNumber from "bignumber.js";
+import 'dotenv/config'
+
+// provider
+const provider = CHAIN_TO_PROVIDER_MAP[ChainId.HARBINGER]
+// define slippage
+const slippage = new Percent(new BigNumber("10"))
+// create asset
+const tkoin = new TKOIN(ChainId.HARBINGER);
+const vhp = new VHP(ChainId.HARBINGER)
+// create signer
+const signer = Signer.fromWif(process.env.ACCOPUNT_PK);
+// set provider
+signer.provider = provider
+// create pair
+const PAIR_VHPKOIN = await Fetcher.fetchPairData(ChainId.HARBINGER, tkoin, vhp)
+
+
+/**
+ * TRADE
+ * */
+// create the route by adding the trading pairs and relevant Currencies parameters
+// in this example: VHP/KOIN Pair and the input currency VHP
+// A route through multiple pairs (vhp to KoinDX token) would look like this:
+// let router = new Router([ PAIR_VHPKOIN, PAIR_KOINKOINDX ], vhp, koindx)
+let router = new Router([PAIR_VHPKOIN], vhp)
+// get the data which will be the parameters for our contract call
+let result = router.tradeExactIn(new BigNumber("100000"), slippage)
+let data = {
+  from: signer.getAddress(),
+  receiver: signer.getAddress(),
+  amountIn: result.amount_in.toFixed(0, 1),
+  amountOutMin: result.amount_out_min.toFixed(0, 1),
+  path: result.path.map(token => token.address)
+}
+console.log(data)
+
+/**
+ * FINAL PROCESS
+ */
+// get the addresses related to the correct chainId
+let address = CHAIN_TO_ADDRESSES_MAP[ChainId.HARBINGER]
+// setup periphery contract
+let periphery = new Contract({
+  id: address.periphery,
+  abi: PeripheryAbi,
+  provider: provider,
+})
+// set only operation
+periphery.options.onlyOperation = true; 
+// define configs
+let configs = { payer: signer.getAddress() };
+// create new Transaction
+const tx = new Transaction({ signer })
+// add a swap_tokens_in operation 
+tx.pushOperation(periphery.functions.swap_tokens_in(data, configs))
+// send the Transaction
+const receipt = await tx.send();
+await tx.wait();
+
+console.log(receipt)
+```

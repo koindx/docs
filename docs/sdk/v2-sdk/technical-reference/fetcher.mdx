@@ -1,0 +1,21 @@
+---
+sidebar_position: 4
+description: KoinDX V2-SDK documentation fetcher
+title: Fetcher
+slug: fetcher
+---
+
+# Fetcher
+
+The Fetcher object contains two static methods fetchTokenData and fetchPairData.
+The functions return a Token or Pair object based on the queried on-chain data.
+## Static Methods
+
+### fetchTokenData
+```js title="fetchTokenData"
+fetchTokenData(chainId: ChainId, address: string, provider?: Provider): Promise<Currency | undefined>
+```
+### fetchPairData
+```js title="fetchPairData" wordWrap=true
+async fetchPairData(chainId: ChainId, tokenA: Currency, tokenB: Currency, provider?: Provider): Promise<Pair>
+```

@@ -1,0 +1,55 @@
+---
+sidebar_position: 5
+description: KoinDX V2-SDK router documentation
+title: Router
+slug: router
+---
+
+# Router
+
+```
+constructor(pairs: Pair[], input: Currency, output: Currency)
+```
+
+## Example
+```js
+const router = new Router([PAIR_VHPKOIN], vhp)
+```
+
+## Properties
+
+  public readonly pairs: Pair[]
+  public readonly path: Currency[]
+  public readonly input: Currency
+  public readonly output: Currency
+
+### pairs
+```
+pairs: Pair[]
+```
+
+### path
+```
+path: Currency[]
+```
+
+### input
+```
+input: Currency
+```
+
+### output
+```
+output: Currency
+```
+## Methods
+
+### tradeExactOut
+```
+tradeExactOut(amount: BigNumber, percent: Percent): TradeExactOut
+```
+
+### tradeExactIn
+```
+tradeExactIn(amount: BigNumber, percent: Percent): TradeExactIn 
+```
