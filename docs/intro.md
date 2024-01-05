@@ -16,7 +16,7 @@ If you want to learn about how to use KoinDX, take a look at the [**Getting Star
 
 ### What you'll need
 
-KoinDX protocols are available currently on Koinos Harbinger testnet (v3).
+KoinDX protocols are available currently on Koinos Harbinger.
 
 To use KoinDX, make sure to use one of these wallets:
 
