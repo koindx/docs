@@ -10,7 +10,7 @@ In a decentralized exchange like KoinDX, liquidity providing involves depositing
 
 When you deposit funds into the liquidity pool, you receive liquidity provider (LP) tokens in return. These LP tokens represent your share of the liquidity pool and can be redeemed for your portion of the trading fees earned by the pool.
 
-For example, let's say you deposit 10,000 KOIN and 10,000 VHP into the KOIN/VHP liquidity pool on KoinDX. This gives you a 50% share of the total liquidity pool, which currently has a total value of 20,000 KOIN and 20,000 VHP.
+For example, let's say you deposit 10,000 KOIN and 10,000 VHP into the KOIN/VHP liquidity pool on KoinDX. This gives you a 50% share of the total liquidity pool, which then has a total value of 20,000 KOIN and 20,000 VHP.
 
 If someone wants to trade 1,000 KOIN for VHP on KoinDX, the trade would be executed against the liquidity pool. This means that the trader's 1,000 KOIN would be swapped for an equivalent amount of VHP from the pool, and the trading fees for this transaction would be charged.
 
