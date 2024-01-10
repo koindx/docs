@@ -25,3 +25,7 @@ To use KoinDX, make sure to use one of these wallets:
 - [Konio](http://konio.io?utm_source=koindx-docs) Wallet Connect App (iOS & Android)
 - [Portal](http://portal.armana.io?utm_source=koindx-docs) Wallet Connect App (iOS & Android)
 - [Koinos CLI](https://github.com/koinos/koinos-cli) By Koinos Group (Only works with the protocols directly)
+
+### FAQ / Troubleshooting
+
+If you need help, please take a look at our [FAQ and Troubleshooting page](faq/troubleshooting.md)

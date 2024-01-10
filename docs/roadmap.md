@@ -5,6 +5,10 @@ sidebar_position: 9
 # Roadmap
 
 ## 2024
-- [ ] API
 
-- TBA
+- [ ] KoinDX API
+- [ ] TBA
+- [ ] TBA
+- [ ] TBA
+- [ ] TBA
+- [ ] TBA

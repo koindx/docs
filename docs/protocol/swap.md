@@ -10,7 +10,6 @@ This section explains to you what a swap is and how you do a swap on KoinDX.
 
 ![KoinDX swap page](/img/doc_img/swap/koindx-swap-not-connected.jpg)
 
-
 A swap is a very simple way to trade assets on KoinDX.
 
 On KoinDX you don't trade directly on a peer to peer basis with other KoinDX users. You will use our the liquidity locked into our trading protocol instead.

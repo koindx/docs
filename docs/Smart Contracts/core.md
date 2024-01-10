@@ -96,7 +96,6 @@ Method used to transfer liquidity tokens.
 | to         | It is the address that will receive the tokens   |
 | value      | It is the amount of tokens that you want to send |
 
-
 ### approve
 
 Method used to approve the use of tokens in an address if the owner is another address.
