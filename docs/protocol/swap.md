@@ -28,7 +28,7 @@ This sounds much more complex than it is in reality. Learn how to swap assets on
 
 2. **Input Amount**: Enter the amount of KOIN you wish to swap. Adding a number will update the input field of the other token. You will see directly what you can receive for this trade. Notice also the slippage for your trade and also the number of the maximum send amount.
 
-3. **Convenience Features**: There are "MAX" and "HALF" buttons, which allow you to quickly choose to swap all or half of your available KOIN.
+3. **Convenience Features**: There are "MAX" and "HALF" buttons, which allow you to quickly choose to swap all or half of your available coin.
 
 4. **Output Token and Amount**: Below, the interface shows the output token, which is USDT in this case. The amount you will receive for the swap is calculated automatically, shown here as approximately 16.92 USDT.
 
