@@ -10,10 +10,11 @@ This section explains to you what a swap is and how you do a swap on KoinDX.
 
 ![KoinDX swap page](/img/doc_img/swap/koindx-swap-not-connected.jpg)
 
-A swap is a very simple way to trade assets on KoinDX.
+The swap is a simple way to trade assets on KoinDX.
 
-On KoinDX you don't trade directly on a peer to peer basis with other KoinDX users. You will use our the liquidity locked into our trading protocol instead.
-You are trading against the liquidity pools which contain the necessary liquidity for the token pairs. The market price is not set by users, it is calculated by an algorithm. This is called Automated Market Makter (AMM).
+On KoinDX you don't trade directly on a peer-to-peer basis with other KoinDX users. Instead, the liquidity locked in our contracts is used in the KoinDX trading protocol.
+
+You trade against the liquidity pools that contain the necessary liquidity for the token pairs. The market price is not set by users, it is calculated by an algorithm. This is called Automated Market Maker (AMM).
 
 This liquidity comes from other users who provide liquidity at KoinDX. Check the [liquidity page](liquidity.md) to learn more about it.
 
@@ -44,7 +45,7 @@ This sounds much more complex than it is in reality. Learn how to swap assets on
 
 ## How do I swap assets on KoinDX?
 
-If you want to swap an asset on KoinDX, navigate to the [swap page](https://koindx.com/swap?utm_source=koindx-docs).
+If you want to swap an asset on KoinDX, navigate to the [swap page](https://app.koindx.com/swap?utm_source=koindx-docs).
 
 1. [connect](../getting-started/connect.md) your cryptocurrency wallet to the DEX platform.
 2. Ensure you have sufficient balance of the token you want to swap.
