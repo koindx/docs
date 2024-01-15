@@ -6,12 +6,12 @@ sidebar_position: 1
 
 The periphery contract is the main koindx contract, its function is to be the intermediary between the different token pools and the end user. Among its functions is to calculate the entry and exit inputs of tokens to add and remove liquidity, token swap and pool verification.
 
-## Addresses
+## Contract Addresses
 
 | Network           | Address                            |
 |-------------------|------------------------------------|
-| Koinos Harbinger  | 18MV8beHrgV78JpHxTXrvPfSmP2kWy7DVk |
 | Koinos Mainnet    | 17e1q6Fh5RgnuA8K7v4KvXXH4k9qHgsT5s |
+| Koinos Harbinger  | 18MV8beHrgV78JpHxTXrvPfSmP2kWy7DVk |
 
 ## Read-Only Functions
 

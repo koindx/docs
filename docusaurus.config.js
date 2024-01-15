@@ -46,7 +46,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'News: KoinDX Contract Migration - <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/koindx">Follow us on Twitter</a> and don\'t miss an update.',
+          'News: KoinDX Contract Migration - <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/koindx?utm_source=koindx-docs">Follow us on Twitter</a> and don\'t miss an update.',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: false,
@@ -68,7 +68,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/koindx',
+            href: 'https://github.com/koindx?utm_source=koindx-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -86,7 +86,7 @@ const config = {
               },
               {
                 label: 'KoinDX Labs',
-                href: 'https://koindx.com'
+                href: 'https://koindx.com?utm_source=koindx-docs'
               }
             ],
           },
@@ -95,15 +95,15 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/v7K49BBH8N',
+                href: 'https://discord.gg/v7K49BBH8N?utm_source=koindx-docs',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/koindx',
+                href: 'https://twitter.com/koindx?utm_source=koindx-docs',
               },
               {
                 label: 'Telegram',
-                href: 'https://t.me/koindx'
+                href: 'https://t.me/koindx?utm_source=koindx-docs'
               }
             ],
           },
@@ -112,15 +112,15 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                href: 'https://blog.koindx.com',
+                href: 'https://blog.koindx.com?utm_source=koindx-docs',
               },
               {
                 label: 'Koinos Whaletracker',
-                href: 'https://t.me/koinoswhaletracker',
+                href: 'https://t.me/koinoswhaletracker?utm_source=koindx-docs',
               },
               {
                 label: 'Status',
-                href: 'https://status.koindx.com',
+                href: 'https://status.koindx.com?utm_source=koindx-docs',
               }
               
             ],
