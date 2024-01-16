@@ -10,7 +10,7 @@ Welcome to the KoinDX Liquidity guide. This document is designed to provide a st
 
 ## Understanding Liquidity
 
-### What is liquidity
+### What is Liquidity
 
 In a decentralized exchange like KoinDX, liquidity refers to the availability of assets in a liquidity pool, facilitating trading between buyers and sellers. These pools are essential for token pairs trading, such as KOIN and VHP. A liquidity pool will only have liquidity if someone provides this liquidity.
 
