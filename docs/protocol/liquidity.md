@@ -53,7 +53,7 @@ Check out the [liquidity](https://app.koindx.com/liquidity?utm_source=koindx-doc
 2. A modal will show you two select inputs. Choose the trading pair of your position which you want to import.
 3. To confirm your selection click on _Import Position_.
 
-_If the liquidity does not show up after importing, try to reload the page_
+If the liquidity does not show up after importing, try to reload the page
 
 ![Import Position](/img/doc_img/liquidity/liquidity_import_position.png)
 
