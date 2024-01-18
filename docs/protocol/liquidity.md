@@ -69,7 +69,7 @@ If the liquidity does not show up after importing, try to reload the page.
 ### Removing Liquidity
 
 1. Go to the [overview page of the liquidity category](https://app.koindx.com/liquidity?utm_source=koindx-docs).
-2. Make sure your liquidity position imported.
+2. Make sure your liquidity position is imported.
 3. Expand the relevant token pair card
 4. Click on *Remove*
 5. Set the amount (%) of how much liquidity you want to remove

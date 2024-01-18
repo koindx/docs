@@ -43,7 +43,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-   
+
       announcementBar: {
         id: 'support_us',
         content:
@@ -123,7 +123,7 @@ const config = {
                 label: 'Status',
                 href: 'https://status.koindx.com?utm_source=koindx-docs',
               }
-              
+
             ],
           },
         ],
@@ -133,6 +133,37 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      headTags: [
+        // Declare a <link> preconnect tag
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'preconnect',
+            href: 'https://docs.koindx.com',
+          },
+        },
+        // Declare some json-ld structured data
+        {
+          tagName: 'script',
+          attributes: {
+            type: 'application/ld+json',
+          },
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org/',
+            '@type': 'Organization',
+            name: 'KoinDX',
+            url: 'https://docs.koindx.com/',
+            logo: 'img/koindx_open_graph_image.png',
+            sameAs: [
+              "http://www.twitter.com/koindx",
+              "http://www.koindx.com",
+              "http://app.koindx.com",
+              "http://blog.koindx.com",
+              "http://testnet.koindx.com",
+            ]
+          }),
+        },
+      ],
     }),
 };
 
