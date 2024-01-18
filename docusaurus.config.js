@@ -15,6 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'koindx', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
+  scripts: [{src: 'https://plausible.io/js/script.js', async: true, defer: true, 'data-domain': 'docs.koindx.com'}],
   markdown: {
     mermaid: true
   },
