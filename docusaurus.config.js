@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'koindx', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
-  scripts: [{src: 'https://plausible.io/js/script.js', async: true, defer: true, 'data-domain': 'docs.koindx.com'}],
+  scripts: [{ src: 'https://plausible.io/js/script.js', async: true, defer: true, 'data-domain': 'docs.koindx.com' }],
   markdown: {
     mermaid: true
   },
@@ -73,6 +73,12 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://app.koindx.com?utm_source=koindx-docs',
+            label: 'Launch APP',
+            position: 'right',
+            className: 'button button--secondary button--lg launch-app-button'
+          },
         ],
       },
       footer: {
@@ -81,6 +87,10 @@ const config = {
           {
             title: 'General',
             items: [
+              {
+                href: "https://app.koindx.com?utm_source=koindx-docs",
+                label: "Launch App"
+              },
               {
                 label: 'Docs',
                 to: '/',
