@@ -39,4 +39,4 @@ Instead of the connect button, an element which shows the first and last charact
 
 You have successfully connected your wallet to KoinDX!
 
-Go to the next section ad learn how to add custom tokens on KoinDX
+Go to the next section and learn how to add custom tokens on KoinDX

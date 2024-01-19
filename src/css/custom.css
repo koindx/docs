@@ -37,3 +37,11 @@
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.launch-app-button {
+  transition: all 1.5s ease;
+}
+.launch-app-button:hover {
+  background-color: #00ffbb;
+  color: #000;
+}
