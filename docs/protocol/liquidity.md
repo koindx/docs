@@ -43,17 +43,21 @@ Part of the fee, 0.17% goes directly to the liquidity providers (LPs). The other
 
 Check out the [liquidity](https://app.koindx.com/liquidity?utm_source=koindx-docs) page of KoinDX.
 
+![Liquidity Pool Overview on KoinDX](/img/doc_img/liquidity/koindx-api-liquidity-overview.png)
+
+If you have deactivated the KoinDX API in the settings, your liquidity overview might look like this.
+
 ![Liquidity Pools](/img/doc_img/liquidity/liquidity_pools.png)
 
 #### Overview
 
-**Import Liquidity**: Import existing liquidity positions into your overview.
+**Import Liquidity**: Import existing liquidity positions into your overview. (Only necessary if KoinDX API is deactivated)
 
 **Add Liquidity**: Choose a token pair and amount to add to a liquidity pool.
 
 **Remove Liquidity**: Withdraw your assets from a liquidity pool.
 
-### Import Positions
+### Import Positions (Only necessary if KoinDX API is deactivated)
 
 1. If you want to add an existing position to the overview, for which you already provide liquidity, simply click on _Import_.
 2. A modal will show you two select inputs. Choose the trading pair of your position which you want to import.
